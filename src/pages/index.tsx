@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import styles from "@/styles/home.module.css";
+import styles from "../styles/home.module.css";
 import Image from "next/image";
 import heroImg from '../../public/assets/hero.png'
 import {
