@@ -1,13 +1,14 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore'
+import 'dotenv/config';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAgo3Bfhg1rEkpr9XcZgOZvnh-46MiKiTs",
-  authDomain: "tarefasplus-fcaee.firebaseapp.com",
-  projectId: "tarefasplus-fcaee",
-  storageBucket: "tarefasplus-fcaee.appspot.com",
-  messagingSenderId: "630043031868",
-  appId: "1:630043031868:web:e52335913506ff474c0639"
+  apiKey: `${process.env.NEXT_PUBLIC_API_KEY}`,
+  authDomain: `${process.env.NEXT_PUBLIC_AUTH_DOMAIN}`,
+  projectId: `${process.env.NEXT_PUBLIC_PROJECT_ID}`,
+  storageBucket: `${process.env.NEXT_PUBLIC_STORAGE_BUCKET}`,
+  messagingSenderId: `${process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID}`,
+  appId: `${process.env.NEXT_PUBLIC_APP_ID}`
 };
 
 // Initialize Firebase
